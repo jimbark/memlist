@@ -54,56 +54,10 @@
 
         <!-- Add site specific viewable content here -->
 
-        <!--  single fixed container for all viewable content, might not be needed   -->
-        <!-- div class="container" -->
+        <!--  single container for all viewable content   -->
+        <div class="container">
 
-            <!-- fluid container holding the entire header section -->
-            <header role="banner">
-              <nav role="navigation" class="navbar navbar-static-top navbar-inverse">
-		<div class="container-fluid">
-
-		  <!-- Brand logo and toggle get grouped for better mobile display, these do not collapse -->
-		  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-
-                    <a href="/"><img src="{{static '/img/confgen_logo.png'}}" alt="Memlist Logo" class="navbar-brand"></a>
-
-		  </div><!-- /.navbar-header -->
-
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                      <li><a href="/">Home</a></li>
-                      <li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn a list<span class="caret"></span></a>
-			<ul class="dropdown-menu" role="menu">
-			  <li class="disabled"><a href="#">Geography sample</a></li>
-			  <li class="disabled"><a href="#">Economics sample</a></li>
-			  <li class="divider"></li>
-			  <li><a href="/list-local">List with local JS</a></li>
-			  <li class="disabled"><a href="#">Geography</a></li>
-			  <li class="disabled"><a href="#">Economics</a></li>
-			  <li class="divider"></li>
-			  <li class="disabled"><a href="#">Astronomy</a></li>
-			  <li class="disabled"><a href="#">History</a></li>
-			  <li class="divider"></li>
-			  <li class="disabled"><a href="#">Technology</a></li>
-			</ul>
-                      </li>
-                      <li><a href="/about">About</a></li>
-                      <li><a href="/">Contact</a></li>
-                    </ul>
-		  </div><!--/.nav-collapse -->
-
-		</div><!-- /.container-fluid -->
-              </nav>
-            </header>
-
+            <header><img src="{{static '/img/confgen_logo.png'}}" alt="Memlist logo"></header>
 
 	    {{#if flash}}
                 <div class="alert alert-dismissible alert-{{flash.type}}">
@@ -113,17 +67,7 @@
 		</div>
 	    {{/if}}
 
-
-	    <!-- fluid container holding the entire main section -->
-            <main role="main">
-              <div class="container-fluid">
-		<!-- insert view here -->
-		{{{body}}}
-
-              </div><!-- /.container-fluid -->
-
-            </main>
-
+            {{{body}}}
 
             {{#if showTests}}
             <div id="mocha"></div> 
@@ -140,22 +84,14 @@
                 <script>mocha.run();</script>
             {{/if}}
 
+            <footer>&copy; {{copyrightYear}} Memlist</footer>
 
-	    <!-- fluid container holding the entire footer section -->
-            <footer role="contentinfo">
-              <div class="container-fluid">
-		<div class="row">
-		  <p class="text-center"><small>Copyright &copy; {{copyrightYear}} Memlist</small></p>
-		</div>
-              </div><!-- /.container-fluid -->
-            </footer>
-
-        <!-- /div --><!-- /.container-fixed for whole page, might not be needed -->
+        </div>
 
         <!-- End of site specific viewable content here -->
 
 	<!-- link in custom bundled and minified js here -->
-        <script src="{{static '/js/memlist.min.65063841.js'}}"></script>
+        <script src="{{static '/js/memlist.min.a3ac233e.js'}}"></script>
 
         <!-- link in third party bundled and minified js here -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

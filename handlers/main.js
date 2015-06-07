@@ -16,4 +16,8 @@ exports.about = function(req, res){
         } );
 };
 
+exports.listLocal = function(req, res){
+        res.render('list-local');
+};
+
 

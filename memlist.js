@@ -1,9 +1,5 @@
 // TODO
 
-// initialise git, and link to github
-// create git branches and start proper development process
-
-// add navigation header
 // start work on one page memlist tool
 // remove jquery load at top file (so need to remove jquery test handlebars view?)
 
@@ -170,11 +166,19 @@ app.use(function(req, res, next){
         next();
 });
 
-// load any handlebars partials
+// load any handlebars partials, and other static handlebars context items
 app.use(function(req, res, next){
         if(!res.locals.partials) res.locals.partials = {};
         // exmaple of how to load partials object
         //res.locals.partials.weather = weather.getWeatherData();
+        next();
+});
+
+// set any static handlebars context items
+app.use(function(req, res, next){
+        // year to display beside copyright symbol in footer
+        var year = new Date().getFullYear();        
+        res.locals.copyrightYear = year;
         next();
 });
 

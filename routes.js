@@ -9,6 +9,8 @@ module.exports = function(app){
 
     app.get('/', main.home);
     app.get('/about', main.about);
+    app.get('/list-local', main.listLocal);
+
     app.get('/jquery-test', tests.jqueryTest);
     app.get('/headers', tests.headers);
     app.post('/cart/checkout', tests.cartCheckout);
