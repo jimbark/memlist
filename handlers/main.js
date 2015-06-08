@@ -20,4 +20,8 @@ exports.listLocal = function(req, res){
         res.render('list-local');
 };
 
+exports.listLocalAjax = function(req, res){
+        res.render('list-local-ajax');
+};
+
 
