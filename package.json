@@ -38,7 +38,8 @@
     "grunt-lint-pattern": "~0.1.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node memlist.js"
   },
   "author": "Jim Bark",
   "license": "GPL-3.0"
