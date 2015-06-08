@@ -29,6 +29,29 @@ $('.item-button').on('click', function () {
      }
 });
 
+// Reveal all button - reveal all items at once, set state to active
+$('#revealButton').on('click', function () {
+  $('.item-button').button('revealed');
+  $('.item-button').addClass('active');
+});
+
+// Hide all button - hide all items at once, remove active state
+$('#hideButton').on('click', function () {
+  $('.item-button').button('reset');
+  $('.item-button').removeClass('active');
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // *********************************************************
