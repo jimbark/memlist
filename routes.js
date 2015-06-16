@@ -10,6 +10,9 @@ module.exports = function(app){
     app.get('/', main.home);
     app.get('/about', main.about);
     app.get('/list-local', main.listLocal);
+    app.get('/list-local-ajax', main.listLocalAjax);
+    app.post('/listload', main.listLoad);
+
 
     app.get('/jquery-test', tests.jqueryTest);
     app.get('/headers', tests.headers);
