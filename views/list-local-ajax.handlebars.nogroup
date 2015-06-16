@@ -11,12 +11,12 @@
   	    	 </button>
 		<ul class="dropdown-menu">
     	    	    <li><a href="#" class="list-select" id="list1">List 1 </a></li>
-    	    	    <li><a href="#" class="list-select" id="list2">List 2 </a></li>
-    	    	    <li><a href="#" class="list-select" id="list3">List 3 </a></li>
+    		    <li><a href="#">List 2</a></li>
+    		    <li><a href="#">List 3</a></li>
     		    <li role="separator" class="divider"></li>
-    	    	    <li><a href="#" class="list-select" id="list4">List 4 </a></li>
     		    <li><a href="#">List 4</a></li>
     		    <li><p>paragraph text 1</p></li>
+
   	    	</ul>
             </div>
        </div>
@@ -25,7 +25,7 @@
 
 <div class="row">
   <div class="col-sm-6 col-sm-offset-3">
-       <h3 class="text-center" id="list-title">Select a list to start learning</h3>
+       <h3 class="text-center" id="list-title">World Population by country</h3>
   </div>
 </div>
 
@@ -44,64 +44,85 @@
   </div>
 </div>
 
-
 <div class="row">
-
-  <div id="items" class="btn-group-vertical col-sm-6 col-sm-offset-3" role="group" aria-label="...">
-
+  <div class="col-sm-6 col-sm-offset-3">
        <button type="button" id="myStateButton1" 
        	       data-revealed-text="no data loaded" 
   	       class="btn btn-info btn-block item-button" autocomplete="off">
 	       click to reveal item
        </button>
+  </div>
+</div>
 
-       <button type="button" id="myStateButton2"
-               data-revealed-text="no data loaded"
-               class="btn btn-info btn-block item-button" autocomplete="off">
-               click to reveal item
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+       <button type="button" id="myStateButton2" 
+       	       data-revealed-text="no data loaded" 
+  	       class="btn btn-info btn-block item-button" autocomplete="off">
+	       click to reveal item
        </button>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
        <button type="button" id="myStateButton3" 
        	       data-revealed-text="no data loaded" 
   	       class="btn btn-info btn-block item-button" autocomplete="off">
 	       click to reveal item
        </button>
+  </div>
+</div>
 
-       <button type="button" id="myStateButton4"
-               data-revealed-text="no data loaded"
-               class="btn btn-info btn-block item-button" autocomplete="off">
-               click to reveal item
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+       <button type="button" id="myStateButton4" 
+       	       data-revealed-text="no data loaded" 
+  	       class="btn btn-info btn-block item-button" autocomplete="off">
+	       click to reveal item
        </button>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
        <button type="button" id="myStateButton5" 
        	       data-revealed-text="no data loaded" 
   	       class="btn btn-info btn-block item-button" autocomplete="off">
 	       click to reveal item
        </button>
+  </div>
+</div>
 
-       <button type="button" id="myStateButton6"
-               data-revealed-text="no data loaded"
-               class="btn btn-info btn-block item-button" autocomplete="off">
-               click to reveal item
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+       <button type="button" id="myStateButton6" 
+       	       data-revealed-text="no data loaded" 
+  	       class="btn btn-info btn-block item-button" autocomplete="off">
+	       click to reveal item
        </button>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
        <button type="button" id="myStateButton7" 
        	       data-revealed-text="no data loaded" 
   	       class="btn btn-info btn-block item-button" autocomplete="off">
 	       click to reveal item
        </button>
-
-       <button type="button" id="myStateButton8"
-               data-revealed-text="no data loaded"
-               class="btn btn-info btn-block item-button" autocomplete="off">
-               click to reveal item
-       </button>
-
-
   </div>
-
 </div>
 
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+       <button type="button" id="myStateButton8" 
+       	       data-revealed-text="no data loaded" 
+  	       class="btn btn-info btn-block item-button" autocomplete="off">
+	       click to reveal item
+       </button>
+  </div>
+</div>
 
 <div class="row">
   <div class="col-sm-6 col-sm-offset-3">
